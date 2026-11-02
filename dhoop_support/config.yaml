@@ -1,5 +1,5 @@
 name: Dhoop Support
-version: "0.8.0"
+version: "0.8.1"
 slug: dhoop_support
 url: https://github.com/ckkartik/dhoop-ha-addons-beta
 image: ghcr.io/ckkartik/{arch}-dhoop-support

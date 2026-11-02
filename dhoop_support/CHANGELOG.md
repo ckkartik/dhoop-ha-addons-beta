@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.8.1
+
+- Dhoop's dashboard now hears every change to your Access and Auto-support settings, and to the AI key. Before, a change that kept the connection as it was (for example from 1 day to Always, or Auto-support on or off) showed there only after the add-on reconnected.
+
 ## 0.8.0
 
 Answer Dhoop's access requests from anywhere.
