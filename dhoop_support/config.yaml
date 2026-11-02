@@ -1,0 +1,27 @@
+name: Dhoop Support
+version: "0.6.0"
+slug: dhoop_support
+url: https://github.com/ckkartik/dhoop-ha-addons-beta
+image: ghcr.io/ckkartik/{arch}-dhoop-support
+description: Remote support from Dhoop Smart Living
+arch:
+  - amd64
+  - aarch64
+init: false
+startup: application
+boot: auto
+ingress: true
+ingress_port: 8099
+panel_icon: mdi:lifebuoy
+panel_title: Dhoop Support
+hassio_api: true
+hassio_role: manager
+watchdog: http://[HOST]:[PORT:8099]/health
+backup_exclude:
+  - "raw/*"
+options:
+  relay_url: "https://support.qvqmotors.co.in"
+  read_only: true
+schema:
+  relay_url: url
+  read_only: bool
