@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.8.0
+
+Answer Dhoop's access requests from anywhere.
+
+- Allow and Deny on an access request now work wherever the phone has internet, not only on the home Wi-Fi. Each button is a one-time link through Dhoop's server, which only passes your answer on: this add-on checks it, and each phone gets its own links, so a Deny can never be turned into an Allow. A page opens to say it's done.
+- Confirming a new approver phone, and Other options, still need the home Wi-Fi (or Nabu Casa).
+
 ## 0.7.0
 
 Your home's memory: backed up, and yours to delete.
