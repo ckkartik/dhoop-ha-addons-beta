@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.7.0
+
+Your home's memory: backed up, and yours to delete.
+
+- Every night, inside your maintenance window, Dhoop Support asks Home Assistant for a small backup of itself alone, named "Dhoop memory" and the date. It holds what the assistant remembers, tickets and the activity log, never raw data. It goes to this machine and to wherever your own backups go (not Home Assistant Cloud, which keeps only one backup), with your backup encryption key if you set one. Dhoop Support deletes its own memory backups after 60 days and never touches any other backup. If one fails, the watchdog says so.
+- **Forget everything**, in the panel under what the assistant remembers, for the owner only: after you confirm, it deletes every ticket and message, what the assistant remembers, fixes, the activity log, raw data and the Dhoop memory backups, and asks Dhoop's server to delete its ticket summaries for your home and your home's Telegram topic. The panel then lists what was deleted and anything that couldn't be. Your settings and the pairing stay.
+- If Dhoop revokes this home's pairing (for example for a replaced Mini PC), the add-on stops connecting, ends a session that's on, and the panel offers to pair again.
+- Backups of add-ons alone no longer count as the home's backups in the watchdog's "no recent backup" check.
+
 ## 0.6.1
 
 Two fixes for setting up the add-on.

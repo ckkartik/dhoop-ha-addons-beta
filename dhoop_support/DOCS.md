@@ -17,12 +17,15 @@ Open **Dhoop Support** in the sidebar.
 - **When Dhoop starts a session**: you're told every time, or in a weekly summary.
 - **Updates**: Dhoop keeps add-ons, custom integrations, Home Assistant and the OS up to date, only while it has access and only inside the maintenance window you set here (1–5 AM by default). A full backup comes first and checks come after; anything that fails stops the update. With Access set to Always, a short weekly check runs too, and opens a session only if something needs a look.
 - **AI assistant**: during a session, Dhoop's assistant looks into the problem and suggests fixes, which a Dhoop technician approves. It runs on this machine; what it reads is sent to the AI provider (DeepSeek's servers are in China), never cameras, people, locations, locks, alarms or anything from your phones. Door, motion and presence sensors show whether they work, not what they report. Dhoop's own key is used as part of your AMC, or you can paste your own key here (it stays on this machine, and your provider bills you).
-- **What the assistant remembers**: standing instructions and facts about your home, saved only when a Dhoop technician confirms them, plus past tickets and messages, all on this machine. You can delete any saved item.
+- **What the assistant remembers**: standing instructions and facts about your home, saved only when a Dhoop technician confirms them, plus past tickets and messages, all on this machine. You can delete any saved item. Every night, inside the maintenance window, it's backed up into Home Assistant's backups as "Dhoop memory" and the date: this add-on alone, never raw data, to this machine and wherever your own backups go (not Home Assistant Cloud), with your backup encryption key. These backups are deleted after 60 days; no other backup is ever touched.
+- **Forget everything** deletes everything Dhoop Support has learned about your home: tickets and messages, what the assistant remembers, fixes, the activity log, raw data and the Dhoop memory backups. Dhoop's server deletes its ticket summaries for your home and your home's Telegram topic. The panel asks you to confirm first, and then lists what was deleted and anything that couldn't be. Your settings and the pairing stay. Your own full Home Assistant backups may still hold older copies of this add-on's data.
 - **Activity** lists everything that happened: who turned Support on or off, which fixes Dhoop proposed and who approved them, and when Dhoop had the Home Assistant screens open.
 - **Is it working now?** When Dhoop marks your problem fixed, the panel asks. Answer yes to close the ticket (Support turns off), or no to keep it open. If you don't answer, it closes after 48 hours.
 - When a session ends, a report appears in Home Assistant's notifications.
 
 You can also flip Support with the `input_boolean.dhoop_support` entity, for example from a dashboard card or a button.
+
+**If the Mini PC dies:** install Home Assistant and Dhoop Support on the new one, then restore just Dhoop Support from the newest "Dhoop memory" backup (Settings → System → Backups). The memory, tickets and settings come back, including the pairing.
 
 ## For the Dhoop technician (setup)
 
