@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.9.0
+
+Fleet-wide settings from Dhoop, always within this add-on's own limits, and more for Dhoop's technicians to see.
+
+- **Fleet notes and a policy pack** from Dhoop: lessons about particular integrations for the assistant, and settings such as how patient the watchdog is, AI prices, extra words that keep a device's readings private, and switches to turn the assistant or the weekly check off everywhere. This add-on applies them only within limits written in its code: they can make it more careful, never less; they never send your home's data anywhere new; and they never change your settings. Dhoop's server sends every note to every home: the assistant here reads only those for integrations your home has, so Dhoop's server never learns which you have.
+- **Two new pages in Dhoop's live console**, during a session and through the same privacy filter as the rest: automations that are off or broken and recent runs that failed (a private automation, about presence, locks or a person, is never named), and what the assistant works with here (saved instructions and facts, its model, the playbook version and this month's AI spending).
+- **Risky releases of Dhoop Support** can now be held back from Auto update and installed by Dhoop instead, home by home, in your maintenance window and with a backup, only after Dhoop's own test home took them.
+
 ## 0.8.1
 
 - Dhoop's dashboard now hears every change to your Access and Auto-support settings, and to the AI key. Before, a change that kept the connection as it was (for example from 1 day to Always, or Auto-support on or off) showed there only after the add-on reconnected.
