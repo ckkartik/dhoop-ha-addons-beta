@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.6.1
+
+Two fixes for setting up the add-on.
+
+- A Support toggle left on in Home Assistant, for example from an earlier install of this add-on, no longer starts a support session by itself. The add-on turns it off and notes it in the activity log. Support starts only when someone asks for it while the add-on is running.
+- If Support was turned on before this home was paired, Dhoop now hears about that session as soon as pairing is done. Before, Dhoop saw a session with no ticket and couldn't offer anything in Telegram.
+
 ## 0.6.0
 
 Keeping Dhoop Support itself up to date.
