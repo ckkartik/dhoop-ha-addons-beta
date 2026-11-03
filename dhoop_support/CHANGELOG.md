@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.10.0
+
+The assistant can now use OpenRouter, so Dhoop can change models without a new release.
+
+- On Dhoop's key, the assistant can work through OpenRouter (USA), which passes what it reads only to the hosts your agreement names (Anthropic, OpenAI, Microsoft Azure, Amazon Bedrock, Google Vertex, DeepInfra, Fireworks), and never to one that keeps it. Only a new release of this add-on can change that list. The panel says which route your home uses.
+- Dhoop can switch the model homes on its key use, fleet-wide, through its policy pack. If you use your own key, your choice stays.
+- AI spending now uses OpenRouter's own figure for each call, at the price of the host that answered.
+- If none of the allowed hosts serves a model at the moment, the assistant says so plainly.
+
 ## 0.9.0
 
 Fleet-wide settings from Dhoop, always within this add-on's own limits, and more for Dhoop's technicians to see.
